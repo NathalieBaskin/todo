@@ -1,0 +1,11 @@
+<h1>{{ heading }}</h1>
+
+@if (tasks.length > 0) {
+  <ul>
+    <li *ngFor="let task of tasks">
+      {{ task.title }}
+    </li>
+  </ul>
+} @else {
+  <h2>Du har inga uppgifter!</h2>
+}
